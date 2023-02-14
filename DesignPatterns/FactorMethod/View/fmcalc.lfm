@@ -1,0 +1,139 @@
+object frmCalc: TfrmCalc
+  Left = 329
+  Height = 300
+  Top = 145
+  Width = 460
+  BorderStyle = bsSingle
+  Caption = 'Cálculos de Juros'
+  ClientHeight = 300
+  ClientWidth = 460
+  LCLVersion = '2.2.0.4'
+  object pnFundo: TPanel
+    Left = 0
+    Height = 260
+    Top = 0
+    Width = 460
+    Align = alClient
+    BevelInner = bvLowered
+    BevelWidth = 2
+    ClientHeight = 260
+    ClientWidth = 460
+    TabOrder = 0
+    object pnfundocabecalho: TPanel
+      Left = 4
+      Height = 52
+      Top = 4
+      Width = 452
+      Align = alTop
+      ClientHeight = 52
+      ClientWidth = 452
+      TabOrder = 0
+      object Label1: TLabel
+        Left = 7
+        Height = 15
+        Top = 5
+        Width = 60
+        Caption = 'Valor Atual:'
+      end
+      object edtvrlatual: TEdit
+        Left = 7
+        Height = 23
+        Top = 20
+        Width = 80
+        OnKeyPress = edtvrlatualKeyPress
+        TabOrder = 0
+      end
+      object cbxQtdeParc: TComboBox
+        Left = 142
+        Height = 23
+        Top = 19
+        Width = 73
+        ItemHeight = 15
+        Items.Strings = (
+          '1'
+          '2'
+          '3'
+          '4'
+          '5'
+          '6'
+          '7'
+          '8'
+          '9'
+          '10'
+          '11'
+          '12'
+        )
+        Style = csDropDownList
+        TabOrder = 1
+      end
+      object cbxPrazoPG: TComboBox
+        Left = 273
+        Height = 23
+        Top = 19
+        Width = 111
+        ItemHeight = 15
+        Items.Strings = (
+          'Mensal'
+          'Semestral'
+          'Anual'
+        )
+        Style = csDropDownList
+        TabOrder = 2
+      end
+    end
+    object mmolog: TMemo
+      Left = 4
+      Height = 200
+      Top = 56
+      Width = 452
+      Align = alClient
+      ReadOnly = True
+      TabOrder = 1
+    end
+  end
+  object pnfundorodape: TPanel
+    Left = 0
+    Height = 40
+    Top = 260
+    Width = 460
+    Align = alBottom
+    BevelInner = bvRaised
+    BevelOuter = bvLowered
+    BevelWidth = 2
+    ClientHeight = 40
+    ClientWidth = 460
+    TabOrder = 1
+    object btnSair: TBitBtn
+      Left = 368
+      Height = 30
+      Top = 4
+      Width = 75
+      Caption = '&Sair'
+      OnClick = btnSairClick
+      TabOrder = 0
+    end
+    object btnProcessar: TBitBtn
+      Left = 288
+      Height = 30
+      Top = 4
+      Width = 75
+      Caption = '&Processar'
+      OnClick = btnProcessarClick
+      TabOrder = 1
+    end
+  end
+  object Label2: TLabel
+    Left = 142
+    Height = 15
+    Top = 8
+    Width = 75
+    Caption = 'Qtde Parcelas:'
+  end
+  object Label3: TLabel
+    Left = 274
+    Height = 15
+    Top = 8
+    Width = 112
+    Caption = 'Prazo de Pagamento:'
+  end
+end

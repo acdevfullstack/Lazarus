@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="C:\lazarus\fpc\3.2.2\bin\x86_64-win64\fpc.exe" Date="1411537227"/>
+  <Params Value=" -MObjFPC -Scghi -O1 -gw2 -godwarfsets -gl -l -vewnhibq -FiC:\Desenvolvimento\Lazarus\APIs\Json\lib\x86_64-win64 -FuC:\Desenvolvimento\Lazarus\APIs\Json\modules\.dcp -FuC:\Desenvolvimento\Lazarus\APIs\Json\modules\.dcu -FuC:\Desenvolvimento\Lazarus\APIs\Json\modules -FuC:\Desenvolvimento\Lazarus\APIs\Json\modules\horse\src -FuC:\Desenvolvimento\Lazarus\APIs\Json\modules\jhonson\src -FuC:\Desenvolvimento\Lazarus\APIs\Json\ -FUC:\Desenvolvimento\Lazarus\APIs\Json\lib\x86_64-win64\ -FEC:\Desenvolvimento\Lazarus\APIs\Json\ -oC:\Desenvolvimento\Lazarus\APIs\Json\pjson.exe pjson.lpr"/>
+</CONFIG>
