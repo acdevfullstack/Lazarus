@@ -52,8 +52,8 @@ end;
 
 procedure TfrmCalc.edtvrlatualKeyPress(Sender: TObject; var Key: char);
 begin
-  if not (CharInSet(Key, ['0'..'9', #8])) then
-  Key := #0;
+  if not (CharInSet(Key, ['0'..'9', #8, #44])) then
+    Key := #0;
 end;
 
 function TfrmCalc.validacampos: Boolean;
@@ -62,13 +62,15 @@ var
 begin
   vOK:= True;
   if Length(edtvrlatual.Text) < 1
+  then
   begin
     MessageDlg('Digite valor atual.', mtInformation, [mbOK], 0);
     vOK:= False;
     Exit;
   end;
 
-  if cbxQtdeParc.ItemIndex < 0 then
+  if cbxQtdeParc.ItemIndex < 0
+  then
   begin
     MessageDlg('Digite a quantidade de parcelas.', mtInformation, [mbOK], 0);
     cbxQtdeParc.DroppedDown := True;
@@ -76,7 +78,8 @@ begin
     Exit;
   end;
 
-  if cbxPrazoPG.ItemIndex < 0 then
+  if cbxPrazoPG.ItemIndex < 0
+  then
   begin
     MessageDlg('Selecione o prazo de pagamento.', mtInformation, [mbOK], 0);
     cbxPrazoPG.DroppedDown := True;

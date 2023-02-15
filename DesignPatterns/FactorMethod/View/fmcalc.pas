@@ -52,8 +52,8 @@ end;
 
 procedure TfrmCalc.edtvrlatualKeyPress(Sender: TObject; var Key: char);
 begin
-  if not (CharInSet(Key, ['0'..'9', #8])) then
-  Key := #0;
+  if not (CharInSet(Key, ['0'..'9', #8, #44])) then
+    Key := #0;
 end;
 
 function TfrmCalc.validacampos: Boolean;
@@ -72,7 +72,7 @@ begin
   if cbxQtdeParc.ItemIndex < 0
   then
   begin
-    MessageDlg('Digite a quantidade de parcelas.', mtInformation, [mbOK], 0);
+    MessageDlg('Selecione a quantidade de parcelas.', mtInformation, [mbOK], 0);
     cbxQtdeParc.DroppedDown := True;
     vOK:= False;
     Exit;
